@@ -13,6 +13,6 @@ public static void main(String[] args){
     int sum=m1+m2+m3+m4+m5;
     System.out.println("Total marks obtained = "+sum);
     float p=sum/5;
-    System.out.println("Percentage = "+p+" %");
+    System.out.println("Percentage = "+p+" %"); 
 }
 }

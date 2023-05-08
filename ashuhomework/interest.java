@@ -22,5 +22,6 @@ public static void main(String[] args){
 
     System.out.println("Simple Interest is "+s);
     System.out.println("Compound Interest is "+String.format("%.4f",c));
+    
 }
 }
