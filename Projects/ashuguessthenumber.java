@@ -23,7 +23,7 @@ public class ashuguessthenumber {
         } while(usernum>=0);
         System.out.print("The number was ");
         System.out.println(mynum);
-
+        sc.close();
         }
     }
     

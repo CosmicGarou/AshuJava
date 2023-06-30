@@ -14,5 +14,6 @@ public static void main(String[] args){
     System.out.println("Total marks obtained = "+sum);
     float p=sum/5;
     System.out.println("Percentage = "+p+" %"); 
+    sc.close();
 }
 }

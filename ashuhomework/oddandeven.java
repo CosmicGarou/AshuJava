@@ -3,14 +3,15 @@ package ashuhomework;
 
 public class oddandeven{
 public static void main(String[] args){
-    System.out.print("Enter your number = ");
     Scanner sc = new Scanner(System.in);
-    int a = sc.nextInt();
-    if (a%2==0){
-        System.out.println(a+" is even");
+    System.out.print("Enter the number: ");
+    int n = sc.nextInt();
+    if(n%2==0){
+        System.out.println("The number "+n+" is even");
     }
     else{
-        System.out.println(a+ " is odd");
+        System.out.println("The number "+n+" is odd");
     }
+    sc.close();
 }
 }

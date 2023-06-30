@@ -9,5 +9,6 @@ System.out.print("gets multiplied with ");
 int b = sc.nextInt();
 int c = a * b;
 System.out.print("it gives "+c);
+sc.close();
     }
 }

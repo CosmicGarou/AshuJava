@@ -19,5 +19,6 @@ public class ashuhw7 {
         else{
             System.out.println("Your number "+n+" not pallindrome");
         }
+        sc.close();
     }
 }

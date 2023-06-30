@@ -17,5 +17,6 @@ public class ashuhw4 {
         else{
             System.out.println("Not Weird");
         }
+        sc.close();
     }
 }

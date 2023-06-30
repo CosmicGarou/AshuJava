@@ -20,5 +20,6 @@ public class ashuhw8 {
             System.out.println("Your number "+n+ " is not an Armstrong");
         }
         System.out.println();
+        sc.close();
         }
     }

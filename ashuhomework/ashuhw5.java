@@ -6,5 +6,6 @@ public class ashuhw5 {
         System.out.println("I will repeat whatever you write :)");
         String s = sc.nextLine();
         System.out.println(s);
+        sc.close();
     }
 }

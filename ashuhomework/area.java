@@ -1,14 +1,15 @@
 package ashuhomework;
-    import java.util.*;
+    import java.util.Scanner;
+import java.lang.Math;
 
-public class area{
-public static void main(String[] args){
-    Scanner sc = new Scanner(System.in);
-    System.out.println("Enter the radius of the circle:");
-    int r=sc.nextInt();
-    double a= 3.14 * r * r;
-    double c= 3.14 * r * 2;
-    System.out.print("Area is "+a);
-    System.out.print("Circumference is "+c);
-}
+public class area {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        double pi = 3.14159;
+        System.out.print("Enter radius of the circle: ");
+        double r = sc.nextDouble();
+        System.out.println("Area of the circle is "+pi*Math.pow(r,2));
+        System.out.println("Circumference of the circle is "+2*pi*r);
+        sc.close();
+    }
 }

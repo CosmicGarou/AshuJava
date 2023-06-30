@@ -1,5 +1,4 @@
 package ashuhomework;
-import java.io.*;
 import java.util.*;
 
 public class ashuhr1 {
@@ -13,5 +12,6 @@ public class ashuhr1 {
         System.out.println("String: "+c);
         System.out.println("Double: "+b);
         System.out.println("Int: "+a);
+        sc.close();
     }
 }

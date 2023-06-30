@@ -1,27 +1,23 @@
 package ashuhomework;
-    import java.util.*;
+import java.util.Scanner;
 import java.lang.Math;
-
-public class interest{
-public static void main(String[] args){
-    Scanner sc=new Scanner(System.in);
-    
-    System.out.println("Enter time:");
-    double t=sc.nextDouble();
-    
-    System.out.println("Enter rate:");
-    double r=sc.nextDouble();
-    
-    System.out.println("Enter principle:");
-    double p=sc.nextDouble();
-
-    double s=(p*t*r)/100;
-    double r1= r/100.0;
-    double r2=Math.pow(1.0+r1,t);
-    double c=(p*r2)-p;
-
-    System.out.println("Simple Interest is "+s);
-    System.out.println("Compound Interest is "+String.format("%.4f",c));
-    
-}
+public class interest {
+    public static void main(String[]args){
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter principle amount: ");
+        double p = sc.nextDouble();
+        System.out.print("Enter rate of interest: ");
+        double r = sc.nextDouble();
+        System.out.print("Enter time period in years: ");
+        double t = sc.nextDouble();
+        double si = (p*r*t)/100;
+        System.out.print("Enter number of times the interest was compounded: ");
+        double n = sc.nextDouble();
+        double amount = p*Math.pow(1 + r/100,t);
+        double ci = amount-p;
+        System.out.println("The Simple Interest is "+si);
+      
+        System.out.println("The Compound Interest is "+ci);
+        sc.close();
+    }
 }

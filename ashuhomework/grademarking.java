@@ -3,27 +3,31 @@ package ashuhomework;
 public class grademarking{
 public static void main(String[] args){
     Scanner sc = new Scanner(System.in);
-    System.out.print("Enter the marks = ");
-    int m1 = sc.nextInt();
-    int m2 = sc.nextInt();
-    int m3 = sc.nextInt();
-    int m4 = sc.nextInt();
-    int m5 = sc.nextInt();
-
-    int sum = m1+m2+m3+m4+m5;
-    int p = sum/5;
-    System.out.println("Percentage = "+p+" %");
-    if (p >=90){
-        System.out.println("Grade ==> A");   
+    System.out.print("Enter marks of subject 1: ");
+    int a = sc.nextInt();
+    System.out.print("Enter marks of subject 2: ");
+    int b = sc.nextInt();
+    System.out.print("Enter marks of subject 3: ");
+    int c = sc.nextInt();
+    System.out.print("Enter marks of subject 4: ");
+    int d = sc.nextInt();
+    System.out.print("Enter marks of subject 5: ");
+    int e = sc.nextInt();
+    int sum = a+b+c+d+e;
+    float per = sum/5;
+    System.out.println("Your Total marks obtained is "+sum);
+    if(per>=90){
+        System.out.println("Your percentage is "+per+" and you got A grade");
     }
-    else if (p >=80){
-        System.out.println("Grade ==> B");   
+    else if(per>=80){
+        System.out.println("Your percentage is "+per+" and you got B grade");
     }
-    else if (p >=60){
-        System.out.println("Grade ==> C");   
+    else if(per>=60){
+        System.out.println("Your percentage is "+per+" and you got C grade");
     }
-    else if (p <60){
-        System.out.println("Grade ==> D");   
+    else{
+        System.out.println("Your percentage is "+per+" and you got D grade");
     }
+    sc.close();
 }
 }
